@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.head {
+  text-align: center;
+  color: white;
+  background-color:#237ede;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
