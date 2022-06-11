@@ -5,3 +5,10 @@
 
 }
 
+#forecast{
+visibility: hidden;
+}
+
+.card {
+  height: 500px;
+}
