@@ -4,39 +4,86 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
 <body>
-  <header class="head">Weather Dashboard</header>
+  <header class="row text-white bg-primary mb-3 justify-content-center">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="row">
+    <aside class="col-12 col-lg-3 card text-white bg-secondary mb-3" style="height: 500px">
+      <section>
+      <form id="search-form" class="row justify-content-center">
+        <h2>Search for a City:</h2>
+        <input name="search-input" type="text" placeholder = "San Diego"autofocus="true" class="search-input rounded" />
+        <button type="button" class="btn btn-primary btn-lg rounded search-button">Search</button>
+      </form>
+      </section>
+      <section id="history" class="row justify-content-center"></section>
+    </aside>
+
+    <main class="col-12 col-lg-9">
+      <section id="today">
+        <section class="row">
+          <h2 class="col-auto"></h2>
+          <img class="col-auto">
+        </section>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <h3 id="forecast" style="visibility:hidden">5 Day Forecast:</h3>
+      <section id="5-day-forecast" class="row justify-content-center">
+        <section class="col-12 col-md-6 col-lg-2">
+          <h5></h5>
+          <img>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section class="col-12 col-md-6 col-lg-2">
+          <h5></h5>
+          <img>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section class="col-12 col-md-6 col-lg-2">
+          <h5></h5>
+          <img>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section class="col-12 col-md-6 col-lg-2">
+          <h5></h5>
+          <img>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section class="col-12 col-md-6 col-lg-2">
+          <h5></h5>
+          <img>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+      </section>
+    
+
+    </main>
+  </div>
     
   
 
-  <main class="container" id="container">
-    <div class="row">
-      <!--search for city-->
-      <div class ="card1">
-      
-      <h1 class="search">Search for a City:</h1>
-      
-      <form id="city">
-        <input name="City" id = "city" type="text" placeholder = "San Diego"autofocus="true" class="city-input" />
-        <button type="submit" class="btn">Search</button>
-      </form>
-
-
-      <div id="history"></div>
-      </div>
-
-    </div>
-    <!--container for 5 days forecast-->
-    <div class="col-12 col-md-8">
-    
-    <div id="fiveDay" class="row"></div>
-    </div>
-
-  </main>
-
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.js"></script>
   <script src="./assets/JS/script.js"></script>
 </body>
 </html>
