@@ -15,7 +15,7 @@ SO THAT I can plan a trip accordingly
  https://halima-ikbal.github.io/Weather-Dashboard/ 
 
 # Credits 
-Weather data is provided by the [OpenWeather One Call API](#https://openweathermap.org/)
+Weather data is provided by the https://openweathermap.org
 
 # Screenshot
 <img src="assets/image/2022-06-13.png" width="500" height="300"> 
